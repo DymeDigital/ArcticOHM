@@ -13,7 +13,7 @@ export const WHATSAPP_URL =
 
 /* Brand social profiles — all handles are @arcticohm. */
 export const SOCIAL_LINKS = [
-  { label: 'Facebook', href: 'https://www.facebook.com/arcticohm', Icon: FacebookIcon },
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61593718419924', Icon: FacebookIcon },
   { label: 'Instagram', href: 'https://www.instagram.com/arcticohm', Icon: InstagramIcon },
   { label: 'TikTok', href: 'https://www.tiktok.com/@arcticohm', Icon: TikTokIcon },
 ]
