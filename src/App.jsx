@@ -21,6 +21,7 @@ const CAPABILITIES = [
   { label: 'ANY MAKE', text: 'We repair and service every major brand' },
   { label: 'HOMES & TRADE', text: 'Houses, shops, restaurants & cold rooms' },
   { label: 'NEW UNITS', text: 'Supplied, installed and commissioned properly' },
+  { label: 'AUTHORISED', text: 'Authorised dealers of Samsung, Carrier & Daikin' },
   { label: 'REAL REPLIES', text: 'A person on WhatsApp, not a ticket number' },
 ]
 

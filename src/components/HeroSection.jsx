@@ -55,8 +55,8 @@ export default function HeroSection() {
               </h1>
 
               <p className="hero-description">
-                New units, genuine spares, and repairs on any make — from a Seaview team
-                that quotes straight and turns up on time.
+                New units, genuine spares, and repairs on any make — Authorised dealers of
+                Samsung, Carrier &amp; Daikin.
               </p>
 
               <div className="hero-actions">
