@@ -866,6 +866,10 @@ textarea:focus-visible {
 
 .hero-promo-dots span.is-active { background: var(--blue-400); }
 
+/* Phone-only opening-specials card (rendered under the conveyor).
+   Hidden on desktop, where the hero already carries this card. */
+.mobile-specials { display: none; }
+
 /* ============================================
    CAPABILITY CONVEYOR — a moving supplier's line
    below the hero: what we carry, on a loop
@@ -3101,6 +3105,36 @@ section[id],
   .capability-strip {
     margin-top: var(--space-lg);
     margin-bottom: var(--space-lg);
+  }
+
+  /* ---- Opening-specials card, phone only: directly under the belt ---- */
+  .mobile-specials {
+    display: block;
+    padding: 0 1.25rem;          /* line up with .container at this breakpoint */
+  }
+
+  .mobile-specials-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    align-items: stretch;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .mobile-specials-card .hero-side-body {
+    padding: var(--space-md);
+  }
+
+  .mobile-specials-card .hero-side h3 {
+    font-size: 1.05rem;
+    margin: 2px 0 8px;
+  }
+
+  .mobile-specials-card .hero-promo {
+    flex: 0 0 116px;
+    height: 150px;
+    align-self: center;
   }
 
   /* ---- Coming-soon band: it was ballooning because the

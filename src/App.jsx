@@ -2,6 +2,7 @@ import { ChevronRight } from 'lucide-react'
 
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import MobileSpecialsCard from './components/MobileSpecialsCard'
 import SectionHead from './components/SectionHead'
 import ServicesAccordion from './components/ServicesAccordion'
 import Footer from './components/Footer'
@@ -76,6 +77,9 @@ export default function App() {
           )}
         </div>
       </div>
+
+      {/* Opening specials — phone only, sits under the conveyor */}
+      <MobileSpecialsCard />
 
       {/* Coming soon band */}
       <section className="section section--tight" id="coming-soon">
