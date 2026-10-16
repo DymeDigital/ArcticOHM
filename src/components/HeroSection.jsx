@@ -5,12 +5,10 @@ import heroMobileImg from '../assets/hero-mobile.webp';
 import WhatsAppIcon from './WhatsAppIcon';
 import { WHATSAPP_URL, PHONE_DISPLAY, ADDRESS } from '../constants';
 
-import promo1 from '../assets/specials/special-service-r300.webp';
-import promo2 from '../assets/specials/special-hantech-4999.webp';
-import promo3 from '../assets/specials/special-hantech-5999.webp';
-import promo4 from '../assets/specials/special-signs-service.webp';
+import promo1 from '../assets/specials/special-oct-aircon-6999-9999.webp';
+import promo2 from '../assets/specials/special-oct-service-r300.webp';
 
-const PROMO_IMGS = [promo1, promo2, promo3, promo4];
+const PROMO_IMGS = [promo1, promo2];
 
 const scrollToId = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -74,7 +72,7 @@ export default function HeroSection() {
                   className="btn btn-ghost btn-lg"
                   onClick={() => scrollToId('specials')}
                 >
-                  <span>See opening specials</span>
+                  <span>See October specials</span>
                   <ArrowDown size={18} />
                 </button>
               </div>
@@ -102,7 +100,7 @@ export default function HeroSection() {
             >
               <div className="hero-side-body">
                 <span className="hero-side-eyebrow">On now</span>
-                <h3>Opening specials</h3>
+                <h3>October specials</h3>
                 <span className="hero-side-link">See all deals <ArrowRight size={14} /></span>
               </div>
               <div className="hero-promo">

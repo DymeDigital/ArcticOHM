@@ -10,10 +10,8 @@ import WhatsAppIcon from './components/WhatsAppIcon'
 import LocationMap from './components/LocationMap'
 import { WHATSAPP_URL, PHONE_TEL, PHONE_DISPLAY } from './constants'
 
-import specialServiceR300 from './assets/specials/special-service-r300.webp'
-import specialSignsService from './assets/specials/special-signs-service.webp'
-import specialHantech5999 from './assets/specials/special-hantech-5999.webp'
-import specialHantech4999 from './assets/specials/special-hantech-4999.webp'
+import specialAircon from './assets/specials/special-oct-aircon-6999-9999.webp'
+import specialService from './assets/specials/special-oct-service-r300.webp'
 
 /* Capability line — reads like the header of a supplier's letter. */
 const CAPABILITIES = [
@@ -43,10 +41,8 @@ const REASONS = [
 ]
 
 const SPECIALS = [
-  { img: specialServiceR300, w: 950, h: 1267, tag: 'DEAL·01', caption: 'Full aircon service — R300', alt: 'Aircon service special — R300. Book your service now with Arctic Ohm.' },
-  { img: specialHantech4999, w: 950, h: 1267, tag: 'DEAL·02', caption: 'Hantech 12 000 BTU — R4 999 + R1 190 install kit', alt: 'Hantech 12000 BTU aircon opening special — R4999 plus R1190 installation kit.' },
-  { img: specialHantech5999, w: 896, h: 1194, tag: 'DEAL·03', caption: 'Hantech 12 000 BTU inverter — R5 999 + R1 250 install kit', alt: 'Hantech 12000 BTU inverter aircon — R5999 plus R1250 installation kit.' },
-  { img: specialSignsService, w: 950, h: 1187, tag: 'GUIDE', caption: '7 signs your aircon needs a service', alt: 'Seven signs your aircon needs a service — Arctic Ohm.' },
+  { img: specialAircon, w: 1024, h: 1536, tag: 'DEAL·01', caption: '12 000 BTU R6 999 · 18 000 BTU R9 999 — incl. install kit up to 3 m', alt: 'Arctic Ohm aircon special — 12000 BTU for R6999 and 18000 BTU for R9999, including installation kit up to 3 metres.' },
+  { img: specialService, w: 832, h: 1248, tag: 'DEAL·02', caption: 'Aircon service — R300 within 30 km', alt: 'Aircon service special — R300 within a 30 km radius. Book with Arctic Ohm.' },
 ]
 
 const scrollToId = (id) => {
@@ -79,7 +75,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* Opening specials — phone only, sits under the conveyor */}
+      {/* October specials — phone only, sits under the conveyor */}
       <MobileSpecialsCard />
 
       {/* Coming soon band */}
@@ -140,8 +136,8 @@ export default function App() {
         <div className="container">
           <SectionHead
             code="PROMO"
-            title="Opening specials"
-            intro="Launch pricing while stock lasts. Tap any deal to check availability and book on WhatsApp."
+            title="October specials"
+            intro="October pricing while stock lasts. Tap any deal to check availability and book on WhatsApp."
           />
           <div className="specials-grid">
             {SPECIALS.map((s, i) => (
